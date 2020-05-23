@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraFollow : MonoBehaviour
+{
+    public Transform player;
+    // Update is called once per frame
+    void Update()
+    {
+        if (player.position.y > this.transform.position.y)
+        {
+            //setting cam position to player position
+            this.transform.position = new Vector3(transform.position.x, player.position.y, transform.position.z);
+        }
+    }
+}
