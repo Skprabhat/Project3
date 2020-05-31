@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //adding up velocity to player
+            AudioManager.instance.play("Jump");
             rb.velocity = Vector2.up * jumpForce;
             Time.timeScale = 1;
         }
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
         {
             //setting gameOver to true
             gameObject.SetActive(false);
+            AudioManager.instance.play("Death");
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             GameManager.instance.GameOver();
         }

@@ -9,7 +9,7 @@ public class Circle : MonoBehaviour
     private void Start()
     {
         direction = Random.Range(1, 3);
-        rotSpeed = Random.Range(100, 120);
+        rotSpeed = Random.Range(120, 160);
     }
     // Update is called once per frame
     void Update()

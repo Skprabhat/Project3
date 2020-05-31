@@ -43,4 +43,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b09c256d3633f44bec81265ae72e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Jump
+    clip: {fileID: 8300000, guid: 171a5e4c8263f204aa839a91a5e45e5a, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: d4865f0a903ac144da7b2491241e71c5, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 2734a4c716871cd499a27d219aba5e00, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
